@@ -1,0 +1,305 @@
+
+/* CSS Document */
+
+
+
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, img {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+  
+/* Set a background color */
+body{
+    background-color: #345c9b;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    color: white;
+
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+  
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color:#50B2D7;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    
+}
+  
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+  
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+  
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+  
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+  
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+  
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+  
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+/*----------------------------------------------------------------------------------*/
+header{
+    text-align: center;
+}
+.nombre{
+    padding: 10px;
+    font-family: Verdana,sans-serif;
+}
+.mainMenu{
+    margin: 0px 35%;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+    padding: 21.5px;
+}
+
+li > a{
+    text-decoration: none;  
+    color:white;
+}
+
+.testHover:hover, li>a:hover{
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    background-color:#a5bfde;
+}
+
+
+.yo{
+    border-radius: 100%;
+    padding: 50px 50px;
+    height: 500px;
+    
+}
+section{
+    border-radius: 5%;
+    margin: 0 10%;
+    width: 80%;
+    background-color: #2d567a;
+   
+}
+
+#objetivo{
+    text-align: center;
+    margin: -40% 0;
+    float:right;
+}
+h4{
+    font-size: 50px;
+    padding:30px 0;
+}
+
+.contacto{
+    font-size: 50px;
+    padding:5px 0;
+}
+
+.edu{
+    padding: 0;
+}
+
+.img{
+   height: 190px;
+   
+}
+.exp{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.fecha{
+    color:black;
+    padding-bottom: 5px;
+}
+
+.cajas{
+    color: black;
+}
+
+.intereses{
+    text-align: center;
+    padding:30px 50px;
+}
+
+.int{
+    border-radius: 5px;
+    
+    background-color: teal;
+    width: 100%;
+
+}
+
+.redes{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    
+}
+#redesSociales{
+ margin-left: 35%;
+}
+
+address{
+    padding-top: 20px;
+    text-align: center;
+}
+
+p{
+    padding: 10px;
+}
+
+h3{
+    padding-bottom: 15px;
+    font-size: 30px;
+ 
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
